@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dout.cpp" />
+    <ClCompile Include="install_itself.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
