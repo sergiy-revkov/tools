@@ -1,7 +1,7 @@
 !ifndef __TRACER__
 !define __TRACER__
 
-!define LOG_FILE_NAME "$DESKTOP\wajam_log.txt"
+!define LOG_FILE_NAME "$DESKTOP\operations_log.txt"
 !define INTERNAL_DEBUGPRINT `System::Call kernel32::OutputDebugString(ts)`
 
 !define DebugPrint '!insertmacro DebugPrint'
