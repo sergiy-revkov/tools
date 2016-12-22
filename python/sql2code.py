@@ -29,8 +29,6 @@ def sql_definition_to_csharp(lines):
             is_not_null = True
         mo = re.match(spec_re_with_len, line)
         if mo != None:
-            #print line
-            #print(mo.group(1) + " " + mo.group(2) + " " + mo.group(4))
             field_name = mo.group(1)
             field_type = mo.group(2)
             if field_type == 'varchar':
@@ -48,7 +46,6 @@ def sql_definition_to_csharp(lines):
             print('[MaxLength(%d)]'%field_len)
 
         print('public %s %s { get; set; }\n'%(sql2csharp[field_type], field_name))
-
 
 
 def test_harness():
