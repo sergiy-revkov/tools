@@ -7,6 +7,9 @@ namespace base
   class vertex_t
   {
   public:
+    vertex_t(): x(0), y(0), z(0) {}
+    vertex_t(const T x_, const T y_, const T z_): x(x_), y(y_), z(z_) {}
+
     T x;
     T y;
     T z;

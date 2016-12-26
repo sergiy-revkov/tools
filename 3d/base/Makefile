@@ -2,11 +2,11 @@ HEADERS = vertex.h bounding_box.h
 
 OBJECTS = test.o
 
-FLAGS = -std=c++11
+FLAGS = -std=c++11 -Wall
 
 default: test.a
 
-%.o: %.cpp $(HEADERS)
+%.o: %.cpp $(HEADERS) Makefile
 	g++ $(FLAGS) -c -g $< -o $@
 
 test.a: $(OBJECTS)

@@ -8,6 +8,7 @@ namespace base
   class bounding_box
   {
   public:
+    
     bounding_box() {}
   private:
     base::vertex min_;
