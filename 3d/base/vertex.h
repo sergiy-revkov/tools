@@ -1,5 +1,6 @@
 #ifndef __vertex_h__base_
 #define __vertex_h__base_
+#include <limits>
 
 namespace base
 {
@@ -16,6 +17,14 @@ namespace base
   };
 
   using vertex = vertex_t<double>;
+
+  static const vertex vertex_min (std::numeric_limits<double>::min(),
+				  std::numeric_limits<double>::min(),
+				  std::numeric_limits<double>::min());
+
+  static const vertex vertex_max (std::numeric_limits<double>::max(),
+				  std::numeric_limits<double>::max(),
+				  std::numeric_limits<double>::max());
 }
 
 
