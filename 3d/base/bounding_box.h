@@ -8,7 +8,11 @@ namespace base
   class bounding_box
   {
   public:
-    bounding_box(): min_(base::vertex_max), max_(base::vertex_min) {}
+    bounding_box()
+      : min_(base::get_vertex_max())
+      , max_(base::get_vertex_min())
+    {}
+      
     void add_vertex(const vertex& v);
   private:
     base::vertex min_;
